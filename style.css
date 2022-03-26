@@ -1,0 +1,149 @@
+body
+{
+    background-color: hsl(0, 95%, 15%);
+    transition: background-color 2s cubic-bezier(0, 0, 0, 1);
+
+}
+@font-face 
+{
+    font-family: "Montserrat";
+    src: url("font/MontserratAlternates-ExtraBold.otf");
+}
+*
+{
+    margin: 0;
+    padding: 0;
+    color: #FFF38A;
+    font-family: 'Montserrat', sans-serif;
+}
+
+h1
+{
+
+
+font-family: 'Montserrat', sans-serif;
+
+font-style: normal;
+font-weight: 700;
+font-size: 40px;
+line-height: 49px;
+color: #FFF38A;
+}
+
+p
+{
+
+font-family: 'Montserrat', sans-serif;
+
+font-style: normal;
+font-weight: 200;
+font-size: 20px;
+line-height: 30px;
+color: #FFF38A;
+/* partie pour les transitions*/
+transition: opacity .2s ease-in;
+}
+
+.pics img{
+    width: 300px;
+    height: auto;
+}
+
+img{
+    position: absolute;
+    right: 200px;
+    top: 2rem;
+    transition:  .1s ease-out;
+}
+/* img:hover
+{
+    right: 50px;
+} */
+.bignombre
+{
+    display:flex;
+    width: 510px;
+    margin-top: 5.5rem;
+    margin-left: 7rem;
+    gap: 20px;
+}
+
+/* .n19, .n7 , .n0 , .n8 , .n3
+{
+    margin: 2px;
+} */
+
+.containertext 
+{
+    width: 510px;
+    height: 253px;
+    margin-top: 1.5rem;
+    margin-left: 7rem;
+}
+
+.nombre
+{
+    display: flex;
+    gap: 20px;
+}
+
+.slide
+{
+    display: flex;
+    justify-content: space-between;
+    padding-left: 4rem;
+    padding-right: 4rem;
+    position: relative;
+}
+.three
+{
+    display: flex;
+    justify-content: space-between ;
+    flex-basis: 60%;
+    padding-top: 2rem ;
+    z-index: 2;
+
+}
+
+.twoarr
+{
+    display: flex;
+    padding-top: 2rem ;
+}
+
+.twoarr div
+{
+    margin: 45px;
+}
+
+.three div{
+    margin: 45px;
+}
+
+.barre
+{
+    position: absolute;
+    top: 630px;
+    right: 140px;
+    height: 5px;
+    width: 47vw;
+    background-color: #fff9c6a9;
+    z-index: 0;
+}
+
+.barrechar
+{
+    position: absolute;
+    top: 630px;
+    right: 140px;
+    height: 5px;
+    width: 0vw;
+    background-color: #000000;
+    z-index: 1;
+    /* pour la tranzi*/
+    transition: width 1s ease-out;
+}
+svg:hover
+{
+    fill: black;
+}
