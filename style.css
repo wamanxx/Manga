@@ -28,6 +28,7 @@ font-weight: 700;
 font-size: 40px;
 line-height: 49px;
 color: #FFF38A;
+transition:  .2s ease-out;
 }
 
 p
@@ -127,7 +128,7 @@ img{
     right: 140px;
     height: 5px;
     width: 47vw;
-    background-color: #fff9c6a9;
+    background-color: #FFF38A;
     z-index: 0;
 }
 
@@ -137,13 +138,52 @@ img{
     top: 630px;
     right: 140px;
     height: 5px;
-    width: 0vw;
-    background-color: #000000;
+    width: 47vw;
+    background-color: #827B68;
     z-index: 1;
     /* pour la tranzi*/
     transition: width 1s ease-out;
 }
-svg:hover
+
+path 
 {
-    fill: black;
+    transition: fill 0.5s ease;
+}
+circle
+{
+    transition: fill 1s ease;
+    fill: #827B68;
+    /* box-shadow: black 0px 0px 1px; */
+}
+.premierc
+{
+    fill: #FFF38A;
+}
+.leftarr
+{
+    fill: #827B68;
+}
+
+.n8, .n0, .n3, .n7
+{
+    position: absolute;
+    left: 540px;
+    opacity: 0% ;
+
+}
+
+/* .n8, .n0, .n7, .n3
+{
+    transition: left .5s ease-in;
+} */
+
+.n7
+{
+    left: 360px;
+    opacity: 1;
+}
+.n3
+{
+    left: 500px;
+    opacity: 1;
 }
